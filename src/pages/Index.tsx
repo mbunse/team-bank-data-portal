@@ -7,10 +7,13 @@ import UploadForm from '@/components/UploadForm';
 import DownloadForm from '@/components/DownloadForm';
 import PasswordForm from '@/components/PasswordForm';
 import AbrufcodeDisplay from '@/components/AbrufcodeDisplay';
+import LoginDialog from '@/components/LoginDialog';
+import { useAuth } from '@/context/AuthContext';
 import { Upload, Download, Key } from "lucide-react";
 
 const Index = () => {
   const [abrufcode, setAbrufcode] = useState<string | null>(null);
+  const { isAuthenticated } = useAuth();
 
   const handleUploadSuccess = (code: string) => {
     setAbrufcode(code);
@@ -22,6 +25,8 @@ const Index = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <LoginDialog open={!isAuthenticated} />
+      
       <Header />
       
       <main className="flex-grow py-8">
