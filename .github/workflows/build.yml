@@ -27,6 +27,7 @@ jobs:
 
       - name: Build
         run: npm run build
+        # The base path is now configured in vite.config.ts
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -35,7 +36,7 @@ jobs:
           path: dist/
           retention-days: 7
 
-      # Optional - Add this if you want to deploy to GitHub Pages
+      # GitHub Pages deployment
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
