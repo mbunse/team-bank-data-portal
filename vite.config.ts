@@ -6,8 +6,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages deployment
-  base: '/team-bank-data-portal/',
+  // Use relative paths for assets by default, or use the environment variable if provided
+  base: './',
   server: {
     host: "::",
     port: 8080,
