@@ -19,9 +19,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -57,16 +54,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				teambank: {
-					blue: '#003F7E',            // Primary blue
-					orange: '#FF6B00',          // Primary orange
-					lightblue: '#E6EEF7',       // Light blue background
-					gray: '#F5F5F5',            // Light gray background
-					darkgray: '#4A4A4A',        // Dark gray text
-					lightgray: '#EFEFEF',       // Light gray borders
-					success: '#128945',         // Success green
-					error: '#D20F39',           // Error red
-					warning: '#FBBF24',         // Warning yellow
-					info: '#0194D3'             // Info blue
+					blue: '#003F7E',
+					orange: '#FF6B00',
+					lightblue: '#E6EEF7',
+					gray: '#F5F5F5',
+					darkgray: '#4A4A4A'
 				}
 			},
 			borderRadius: {
