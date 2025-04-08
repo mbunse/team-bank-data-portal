@@ -54,17 +54,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				teambank: {
-					blue: '#00A0E6',
-					'dark-blue': '#0F2E5B',
+					blue: '#003F7E',
 					orange: '#FF6B00',
 					lightblue: '#E6EEF7',
 					gray: '#F5F5F5',
 					darkgray: '#4A4A4A'
 				}
-			},
-			fontFamily: {
-				sofia: ['SofiaPro', 'sans-serif'],
-				officina: ['OfficinaSans', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
